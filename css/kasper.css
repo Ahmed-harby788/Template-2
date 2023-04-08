@@ -338,8 +338,8 @@ text-transform: uppercase;
 padding: 15px 0;
 }
 .design .text ul li::before{
-    content: "\e168";
-    font-family: 'Font Awesome 5 Free';
+    font-family: 'Font Awesome\ 5 Free';
+    content: "\e163";
     margin-right: 20px;
     position: relative;
     top: 1px;
@@ -419,3 +419,50 @@ padding: 15px 0;
     margin: 20px auto;
 }
 /* end portfolio */
+/* Start video */
+.video{
+    /* padding-top: var(--section-padding); */
+    padding-bottom: var(--section-padding);
+    position: relative;
+}
+.video::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0 0 0/ 40%);
+}
+.video video{
+    width: 100%;
+}
+.video .text{
+    position: absolute;
+    background-color: var(--transparent-color);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+}
+.video .text h2{
+    color: white;
+    padding-bottom: 30px;
+    font-weight: normal;
+}
+.video .text p{
+    color: white;
+    padding-bottom: 30px;
+    font-weight: normal;
+    font-size: 19px;
+}
+.video .text button{
+    background-color: black;
+    color: white;
+    padding: 12px 18px;
+    text-transform: uppercase;
+    border: none;
+}
+/* End video */
