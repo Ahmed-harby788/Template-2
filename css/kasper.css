@@ -340,9 +340,12 @@ padding: 15px 0;
 .design .text ul li::before{
     font-family: 'Font Awesome\ 5 Free';
     content: "\e163";
-    margin-right: 20px;
-    position: relative;
-    top: 1px;
+    font-weight: 800;
+    font-size: 20px;
+    padding-right: 10px;
+    position: absolute;
+    left: 15px;
+    transform: translateY(8%);
 }
 /* End Design */
 /* start portfolio */
@@ -662,3 +665,55 @@ position: relative;
     top: -15px;
 }
 /* End skills */
+/* Start Qoute */
+.qoute{
+    padding: var(--section-padding) 0;
+    background-image: url(../image/quote.jpg);
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.qoute::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0 0 0 /60%);
+}
+.qoute .container{
+    position: relative;
+}
+.qoute q{
+    font-size: 30px;
+    margin-bottom: 60px;
+    display: block;
+}
+.qoute q::after{
+    font-family: 'Font Awesome\ 5 Free';
+    content: "\f10e";
+    font-weight: 800;
+    font-size: 40px;
+    padding-right: 10px;
+    position: absolute;
+    right: -30px;
+    bottom: 120px;
+}
+.qoute q::before{
+    font-family: 'Font Awesome\ 5 Free';
+    content: "\f10d";
+    font-weight: 800;
+    font-size: 40px;
+    padding-right: 10px;
+    position: absolute;
+    top: 40px;
+    left: 270px;
+}
+@media (max-width: 991px){
+    .qoute q::before,.qoute q::after{
+        opacity: 0;
+    }
+}
+/* End Qoute */
