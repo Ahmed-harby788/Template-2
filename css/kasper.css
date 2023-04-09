@@ -717,3 +717,86 @@ position: relative;
     }
 }
 /* End Qoute */
+/* Start pricing */
+.pricing{
+    padding: var(--section-padding) 0;
+}
+.pricing .plans{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+.plans .plan{
+    text-align: center;
+}
+.plans .plan .head{
+    background-color: #e9e8e8;
+    padding: 40px 20px;
+    border-top: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+.plans .plan .head h3{
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+.plans .plan .head span{
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+}
+.plans .plan .head span::before{
+    content: "$";
+    position: absolute;
+    top: -10px;
+    left: -25px;
+    font-weight: normal;
+    font-size: 20px;
+}
+.plans .plan .head span::after{
+    content: "/Mo";
+    position: absolute;
+    font-weight: normal;
+    font-size: 20px;
+    top: 55px;
+}
+.pricing .plan ul{
+    border-bottom: 1px solid var(--main-color);
+}
+.pricing .plan ul li{
+    padding: 20px;
+    position: relative;
+}
+.pricing .plan ul li:not(:last-child)::after{
+    content: "";
+    width: 150px;
+    height: 1px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    bottom: 0;
+}
+.footer{
+    margin: 60px 0;
+}
+.footer a{
+    background-color: var(--main-color);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+.pricing .contact-text{
+    text-align: center;
+    margin: 30px auto 20px;
+    font-size: 20px;
+}
+.pricing .contact-link{
+    background-color: var(--main-color);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 20px auto;
+    display: block;
+    max-width: fit-content;
+}
+/* End pricing */
