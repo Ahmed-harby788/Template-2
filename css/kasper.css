@@ -364,6 +364,7 @@ padding: 15px 0;
 .portfolio .shuffle .active{
     background-color: var(--main-color);
     color: white;
+    border-radius: 50%;
 }
 .portfolio .image-container{
     display: flex;
@@ -420,6 +421,7 @@ padding: 15px 0;
     font-size: 20px;
     text-transform: uppercase;
     margin: 20px auto;
+    border-radius: 100px;
 }
 /* end portfolio */
 /* Start video */
@@ -784,6 +786,7 @@ position: relative;
     color: white;
     text-decoration: none;
     padding: 10px 20px;
+    border-radius: 100px;
 }
 .pricing .contact-text{
     text-align: center;
@@ -798,6 +801,7 @@ position: relative;
     margin: 20px auto;
     display: block;
     max-width: fit-content;
+    border-radius: 100px;
 }
 /* End pricing */
 /* Start subscribe */
@@ -870,3 +874,69 @@ position: relative;
     }
 }
 /* Start subscribe */
+/* Start contact */
+.contact{
+    padding: var(--section-padding) 0;
+}
+.contact .content{
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 767px){
+    .contact .content{
+        flex-direction: column;
+    }
+}
+.contact .content form{
+    flex-basis: 70%;
+}
+.contact .content form .main-input{
+    padding: 20px;
+    display: block;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.contact .content form textarea.main-input{
+    height: 200px;
+}
+.contact .content form input[type="submit"]{
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    padding: 20px;
+    text-transform: uppercase;
+    display: flex;
+    margin-left: auto;
+    cursor: pointer;
+    border-radius: 100px;
+}
+@media (max-width: 767px){
+    .contact .content form input[type="submit"]{
+    margin: 0 auto 30px;
+}
+}
+@media (max-width: 767px){
+    .contact .content .info{
+        text-align: center;
+}
+}
+.contact .content .info h4{
+font-weight: normal;
+font-size: 18px;
+margin-bottom: 30px;
+}
+.contact .content .info span{
+display: block;
+margin-bottom: 10px;
+color: #777;
+}
+.contact .content .info h4:nth-of-type(2){
+margin-top: 90px;
+}
+.contact .content .info address{
+line-height: 2;
+color: #777;
+}
+
+/* End contact */
